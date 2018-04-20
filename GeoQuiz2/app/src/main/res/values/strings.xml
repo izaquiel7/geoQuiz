@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IzaquielQuiz</string>
+    <string name="t_correto">Correto!</string>
+    <string name="t_incorreto">Incorreto!</string>
+    <string name="question1">Ceara é a capital do brasil?</string>
+    <string name="question2">Garanhuns é a capital do fórro?</string>
+    <string name="question3">No Brazil acontecem terremotos?</string>
+    <string name="question4">O chile tem apelido de saco?</string>
+    <string name="question5">SP é uma cidade brasileira?</string>
+</resources>
