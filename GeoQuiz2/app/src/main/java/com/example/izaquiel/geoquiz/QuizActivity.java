@@ -70,7 +70,9 @@ public class QuizActivity extends AppCompatActivity {
         bBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Metodo voltar ta bugando, fix it later.
+                if (mCurrentIndex == 0){
+                    mCurrentIndex = mQuestionBank.hashCode();
+                }
 
                 currentIndex = (currentIndex-1)%questionBank.length;
                         updateQuestion();
