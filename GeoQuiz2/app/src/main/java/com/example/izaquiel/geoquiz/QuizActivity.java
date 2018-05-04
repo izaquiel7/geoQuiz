@@ -71,7 +71,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (currentIndex == 0){
-                    CurrentIndex = questionBank.hashCode();
+                    currentIndex = questionBank.hashCode();
                 }
 
                 currentIndex = (currentIndex-1)%questionBank.length;
