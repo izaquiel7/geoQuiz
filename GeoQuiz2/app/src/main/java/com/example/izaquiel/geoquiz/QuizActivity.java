@@ -1,5 +1,6 @@
 package com.example.izaquiel.geoquiz;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +14,7 @@ public class QuizActivity extends AppCompatActivity {
     private static final String tag = "QuizActivity";
     private static final String i_chave = "index";
 
+    private Button bCheat;
     private Button bTrue;
     private Button bFalse;
     private Button bNext;
@@ -50,6 +52,18 @@ public class QuizActivity extends AppCompatActivity {
         bFalse = (Button) findViewById(R.id.Bfalse);
         bNext = (Button) findViewById(R.id.nextbuttonId);
         questionTextView = (TextView) findViewById(R.id.textviewid);
+        bCheat.findViewById(R.id.Bcheat);
+
+
+        bCheat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(QuizActivity.this, CheatActivity.class);
+
+
+            }
+        });
+    });
 
         questionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
