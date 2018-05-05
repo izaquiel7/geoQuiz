@@ -1,4 +1,4 @@
-package com.example.izaquiel.geoquiz;
+﻿package com.example.izaquiel.geoquiz;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -64,53 +64,54 @@ public class QuizActivity extends AppCompatActivity {
 
             }
         });
-    });
+
+
 
         questionTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                currentIndex = (currentIndex+1)%questionBank.length;
-                updateQuestion();
-            }
-        });
+        @Override
+        public void onClick(View view) {
+            currentIndex = (currentIndex+1)%questionBank.length;
+            updateQuestion();
+        }
+    });
 
         bTrue.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) {
-                checkAnswer(true);
-            }
-        });
+        public void onClick(View v) {
+            checkAnswer(true);
+        }
+    });
 
         bFalse.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) {
-                checkAnswer(false);
-            }
-        });
-        //Seta a questão atual!
-        updateQuestion();
+        public void onClick(View v) {
+            checkAnswer(false);
+        }
+    });
+    //Seta a questão atual!
+    updateQuestion();
 
         bNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                currentIndex = (currentIndex+1)%questionBank.length;
-                updateQuestion();
-            }
+        @Override
+        public void onClick(View view) {
+            currentIndex = (currentIndex+1)%questionBank.length;
+            updateQuestion();
+        }
 
-        });
+    });
         bBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (currentIndex == 0){
-                    currentIndex = questionBank.hashCode();
-                }
-
-                currentIndex = (currentIndex-1)%questionBank.length;
-                updateQuestion();
-
+        @Override
+        public void onClick(View view) {
+            if (currentIndex == 0){
+                currentIndex = questionBank.hashCode();
             }
-        });
-    }
+
+            currentIndex = (currentIndex-1)%questionBank.length;
+            updateQuestion();
+
+        }
+    });
+}
 
     private void checkAnswer(boolean userPressedTrue) {
         boolean answerIsTrue = questionBank[currentIndex].isAnswerTrue();
@@ -164,4 +165,3 @@ public class QuizActivity extends AppCompatActivity {
 
         Log.d(tag, "esse negocio chamou onDestroy()");
     }
-}
