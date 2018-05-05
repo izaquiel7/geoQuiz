@@ -8,10 +8,12 @@
     <string name="question4">O chile tem apelido de saco!</string>
     <string name="question5">SP é uma cidade brasileira!</string>
     <string name="question6">Rio São Francisco nunca seca!</string>
-    <string name="question7">Pingo fica no jaragua!</string> #verdade
+    <string name="question7">Pingo fica no jaragua!</string>
+    #verdade
     <string name="question8">Brejão cidade de todos!</string>
     <string name="question9">Antes industria cafesal, Brejão.</string>
-    <string name="question10">Recife é longe de Olinda.</string> #falso
+    <string name="question10">Recife é longe de Olinda.</string>
+    #falso
 
     <string name="warning_text">Tem certeza que quer fazer isso?</string>
     <string name="show_answer_button">Mostrar resposta</string>
