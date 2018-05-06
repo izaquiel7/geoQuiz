@@ -5,11 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class CheatActivity extends AppCompatActivity {
 
 
-	private static final String extra_answer_is_true;
+	private static final String extra_answer_is_true = "";
 
 	private TextView answerTextView;
 	private Button bShowAnswer;
@@ -38,7 +39,7 @@ public class CheatActivity extends AppCompatActivity {
 
 		bShowAnswer = (Button) findViewById(R.id.show_answer_button);
 		
-		answerIsTrue.setOnClickListener(new View.OnClickListener() {
+		bShowAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
 		public void onClick(View view) {
 			
@@ -55,4 +56,4 @@ public class CheatActivity extends AppCompatActivity {
 	}
 	
 	   }
-}
+
