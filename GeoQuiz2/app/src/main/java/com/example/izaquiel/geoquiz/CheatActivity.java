@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class CheatActivity extends AppCompatActivity {
 
+
 	private static final String extra_answer_is_true;
 
 	private TextView answerTextView;
